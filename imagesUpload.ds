@@ -1,0 +1,25 @@
+void Test.test()
+{
+	
+personajes = getUrl( "https://pokeapi.co/api/v2/pokemon/charizard");
+photo = personajes.get("sprites").get("back_default");
+info "phot " + photo;
+images = invokeUrl
+[
+	url: photo
+	type: GET
+];
+// info images;
+
+contactos = Contacts[ID != null];
+for each persona in contactos
+{
+	
+	person = Contacts[ID == persona.ID];
+	person.Photo =  "<img src=\"" + photo + "\"" + "/>";
+	info person.ID + " :" + person.Photo;
+} 
+
+
+
+}
