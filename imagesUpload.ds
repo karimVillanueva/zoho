@@ -19,7 +19,7 @@ for each persona in contactos
 	person.Photo =  "<img src=\"" + photo + "\"" + "/>";
 	info person.ID + " :" + person.Photo;
 } 
-
+// Hola
 
 
 }
